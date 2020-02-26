@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/semantic.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Currency Converter</title>
+</head>
+
+<body>
+
+
+
+	<section id="form">
+		<div class="ui grid container">
+			<div class="row">
+				<div class="twelve wide column centered">
+
+					<div class="form">
+							<div class="ui left labeled input">
+								<div class="ui dropdown label">
+									<div class="text">₽ RUB</div>
+								</div>
+								<input type="number" name='RUB' placeholder="RUB" class="rub-input">
+							</div>
+
+
+							<div class="ui left labeled input">
+								<div class="ui dropdown label">
+									<div class="text">$ USD</div>
+								</div>
+								<input type="number" name='USD' placeholder="USD" class="usd-input">
+							</div>
+
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/semantic.js"></script>
+	<script src="js/ajax.json.js"></script>
+	<script>
+		$('.ui.modal').modal('show');
+
+
+		$('.ui.dropdown').dropdown();
+		$('.ui.checkbox').checkbox();
+	</script>
+</body>
+
+</html>
